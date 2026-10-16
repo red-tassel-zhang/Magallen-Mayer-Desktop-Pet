@@ -12,13 +12,13 @@ desktop_pet/
 ├── pet_window.py           # 主窗口：渲染、交互、动画控制、闲置行为、WM_NCHITTEST点击穿透
 ├── animation_player.py     # OpenCV解码webm + numpy色度键去背景 + 循环动画帧缓存
 ├── voice_player.py         # QSoundEffect播放wav语音
-├── data.py                 # 资源路径映射（双皮肤+无人机+37条语音）
+├── data.py                 # 资源路径映射（双皮肤+无人机+38条语音）
 ├── requirements.txt
 └── assets/
     ├── default/            # 默认皮肤 17个webm（基建Relax/Move/Interact/Sit/Sleep + 正面/背面）
     ├── frosty/             # 冰霜雪皮肤 16个webm（含Special特殊动画5.6M）
     ├── drones/{A,F,L}/     # 龙腾无人机 共33个webm（3型 x 2皮肤）
-    └── voices/             # 37个wav中文语音
+    └── voices/             # 38个wav中文语音
 ```
 
 ## 已实现功能
@@ -45,7 +45,7 @@ desktop_pet/
 - **无人机**：双击或右键触发，3台龙腾A/F/L同时出现，自动匹配当前皮肤
 
 ### 语音
-- 37条wav中文语音（瞿子兰配音）
+- 38条wav中文语音（麦哲伦为中文配音，梅尔为日文配音）
 - 每个交互随机从对应类别选取
 - 对话气泡打字效果，动态定位在角色头顶
 
