@@ -1,0 +1,21 @@
+# 默认按文本处理，仓库内存 LF
+* text=auto
+
+# 明确二进制，避免任何换行/编码转换
+*.webm binary
+*.wav  binary
+*.png  binary
+*.ico  binary
+*.jpg  binary
+*.mp3  binary
+*.exe  binary
+*.pyd  binary
+
+# Python 源码用 LF
+*.py text eol=lf
+
+# 让 GitHub 正确统计与展示
+*.py   linguist-language=Python
+*.js   linguist-language=JavaScript
+*.webm binary linguist-vendored
+*.wav  binary linguist-vendored

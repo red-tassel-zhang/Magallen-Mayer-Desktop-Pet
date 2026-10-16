@@ -1,0 +1,13 @@
+{
+  "name": "magallan-desktop-pet",
+  "version": "1.0.0",
+  "description": "麦哲伦桌面宠物 - 明日方舟角色桌面伴侣",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}

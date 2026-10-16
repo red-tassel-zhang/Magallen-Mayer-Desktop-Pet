@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+  user-select: none;
+  cursor: grab;
+}
+
+body:active {
+  cursor: grabbing;
+}
+
+#pet-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: transparent;
+}
+
+/* Speech Bubble - top/left dynamically set by JS */
+.speech-bubble {
+  position: absolute;
+  max-width: 260px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.93);
+  border: 2px solid #4a90d9;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  word-break: break-word;
+  transform: translate(-50%, -100%);
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.93);
+}
+
+.speech-bubble.show {
+  opacity: 1;
+}
+
+.speech-bubble.hidden {
+  display: none;
+}
+
+/* Context Menu */
+.context-menu {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 4px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  min-width: 140px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  pointer-events: none;
+}
+
+.context-menu.show {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.context-menu.hidden {
+  display: none;
+}
+
+.menu-item {
+  padding: 8px 20px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.menu-item:hover {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+.context-menu .separator {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 4px 0;
+}

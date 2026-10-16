@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>麦哲伦桌面宠物</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="pet-canvas"></canvas>
+  <div id="speech-bubble" class="speech-bubble hidden">
+    <span id="bubble-text"></span>
+  </div>
+  <div id="context-menu" class="context-menu hidden">
+    <div class="menu-item" data-action="talk">说句话</div>
+    <div class="menu-item" data-action="skill">放出无人机</div>
+    <div class="menu-item" data-action="walk">走一走</div>
+    <div class="menu-item" data-action="sit">坐下</div>
+    <div class="menu-item" data-action="sleep">睡觉</div>
+    <div class="separator"></div>
+    <div class="menu-item" data-action="hide">隐藏</div>
+    <div class="menu-item" data-action="quit">退出</div>
+  </div>
+  <!-- 隐藏的视频元素池 -->
+  <div id="video-pool" style="display:none"></div>
+  <script src="data.js"></script>
+  <script src="pet.js"></script>
+  <script src="voice.js"></script>
+  <script src="interactions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

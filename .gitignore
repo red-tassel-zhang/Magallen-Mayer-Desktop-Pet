@@ -1,0 +1,29 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- PyInstaller 产物 ----
+build/
+dist/
+*.pyd
+*.log
+
+# ---- Node / Electron ----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 本地临时文件 ----
+*.tmp
+*.bak
