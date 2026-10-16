@@ -66,7 +66,7 @@ python main_mayer.py
 > 项目依赖已装在全局环境。
 
 也可以直接从 [Releases](https://github.com/red-tassel-zhang/Magallen-Mayer-Desktop-Pet/releases)
-下载打包好的 `麦哲伦.exe` / `梅尔.exe`，双击即用，不需要装 Python。
+下载打包好的 `Magallan.exe`（麦哲伦）/ `Mayer.exe`（梅尔），双击即用，不需要装 Python。
 
 ## 📁 目录结构
 
