@@ -19,15 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-================================================================================
-SCOPE OF THIS LICENCE
-================================================================================
-
-The MIT licence above applies ONLY to the source code written for this project
-(all *.py files, main.js / preload.js, the JavaScript and CSS under renderer/,
-and the build scripts).
-
-It does NOT apply to the game assets bundled with this repository. See
-NOTICE.md for the copyright status of the artwork, animations, voice clips and
-character designs.
